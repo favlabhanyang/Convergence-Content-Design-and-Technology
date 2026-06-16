@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>융합콘텐츠디자인과테크놀로지</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand">
+        <span class="brand-name">융합콘텐츠디자인과테크놀로지</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="course-grid" aria-label="课程列表">
+      <!-- Course 1: Unmask Me -->
+      <article class="course-card">
+        <div class="course-meta">
+          <span class="instructor">유신녹 이근동 황쟈치</span>
+        </div>
+        <div class="course-thumb">
+          <a href="https://nomiyu507-glitch.github.io/facemesh/" target="_blank" rel="noopener noreferrer">
+            <img src="img/A.png" alt="Unmask Me">
+          </a>
+        </div>
+        <div class="course-footer">
+          <span class="project-name">Unmask Me</span>
+        </div>
+      </article>
+
+      <!-- Course 2: 짜맞춤·구조의 결합 -->
+      <article class="course-card">
+        <div class="course-meta">
+          <span class="instructor">오성호 유신이 양슈한</span>
+        </div>
+        <div class="course-thumb">
+          <a href="https://wchsgpg.github.io/luban-handpose-system/" target="_blank" rel="noopener noreferrer">
+            <img src="img/B.png" alt="짜맞춤·구조의 결합">
+          </a>
+        </div>
+        <div class="course-footer">
+          <span class="project-name">짜맞춤·구조의 결합</span>
+        </div>
+      </article>
+
+      <!-- Course 3: 목계영의 출정 -->
+      <article class="course-card">
+        <div class="course-meta">
+          <span class="instructor">장빈 에문서 취청위</span>
+        </div>
+        <div class="course-thumb">
+          <a href="https://weiwenshu1049940466-ctrl.github.io/chinese-shadow/" target="_blank" rel="noopener noreferrer">
+            <img src="img/C.png" alt="목계영의 출정">
+          </a>
+        </div>
+        <div class="course-footer">
+          <span class="project-name">목계영의 출정</span>
+        </div>
+      </article>
+
+      <!-- Course 4: 디지털 문물 블라인드 박스 -->
+      <article class="course-card">
+        <div class="course-meta">
+          <span class="instructor">잔수연 기소몽 쩡러우판</span>
+        </div>
+        <div class="course-thumb">
+          <a href="https://jixiaomeng399-beep.github.io/-/" target="_blank" rel="noopener noreferrer">
+            <img src="img/D.png" alt="디지털 문물 블라인드 박스">
+          </a>
+        </div>
+        <div class="course-footer">
+          <span class="project-name">디지털 문물 블라인드 박스</span>
+        </div>
+      </article>
+
+      <!-- Course 5: Hands of Our World -->
+      <article class="course-card">
+        <div class="course-meta">
+          <span class="instructor">루이스 엘리아나 주우동</span>
+        </div>
+        <div class="course-thumb">
+          <a href="https://v7jb5bttg5-ui.github.io/hands-of-our-world/" target="_blank" rel="noopener noreferrer">
+            <img src="img/E.png" alt="Hands of Our World">
+          </a>
+        </div>
+        <div class="course-footer">
+          <span class="project-name">Hands of Our World</span>
+        </div>
+      </article>
+
+      <!-- Course 6: Visible sound -->
+      <article class="course-card">
+        <div class="course-meta">
+          <span class="instructor">허서림 조홍택 장우유</span>
+        </div>
+        <div class="course-thumb">
+          <a href="https://rourou200210-ship-it.github.io/Visible-sound/" target="_blank" rel="noopener noreferrer">
+            <img src="img/F.png" alt="Visible sound">
+          </a>
+        </div>
+        <div class="course-footer">
+          <span class="project-name">Visible sound</span>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script>
+    document.querySelectorAll('.course-thumb a').forEach((link) => {
+      link.addEventListener('click', () => {
+        const isLifted = link.classList.contains('is-lifted');
+        document.querySelectorAll('.course-thumb a.is-lifted').forEach((item) => {
+          item.classList.remove('is-lifted');
+        });
+        if (!isLifted) {
+          link.classList.add('is-lifted');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
